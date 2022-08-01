@@ -1,0 +1,250 @@
+
+<style type="text/css">
+  html {
+    position: inherit;
+    background-size: cover;
+    background-image: url(https://www.stb.com.tn/img/fond.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    font-family: 'Helvetica Neue';
+    min-height: 100%;
+    height: auto;
+  }
+
+  .body {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  fieldset:hover {
+    text-decoration: none !important;
+    outline: none;
+    background: white;
+  }
+
+  legend {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+
+  .logosidebar {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 4px 8px 3px #303030;
+
+    height: 90px;
+
+    background: #104490;
+  }
+
+  /* CSS */
+  .button-19 {
+    appearance: button;
+    background-color: #104490;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .button-19:after {
+    background-clip: padding-box;
+    background-color: #104490;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .button-19:main,
+  .button-19:focus {
+    user-select: auto;
+  }
+
+  .button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+
+  .button-19:disabled {
+    cursor: auto;
+  }
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 45px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>hedi's page</title>
+    <script src="./index.ts"></script>
+  </head>
+  <div >
+      <div class="logosidebar">
+    <img
+      style="float: right; margin-right: 35%; position: relative"
+      src="https://www.stb.com.tn/img/logo_stb.png"
+    />
+    <br />
+    <span
+      style="color: white; font-size: 30px; cursor: pointer; position: relative"
+      onclick="openNav()"
+    >
+      &nbsp; &nbsp;&#9776;
+    </span>
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+      >&times;</a
+    >
+    <a href="#">About</a>
+    <a href="https://www.stb.com.tn/fr/">Services</a>
+    <a href="#">Clients</a>
+    <a href="https://www.stb.com.tn/fr/actualites/">Actualités</a>
+    <a href="https://www.stb.com.tn/fr/site/stb/contact/">Contact</a>
+  </div>
+  <div class="body">
+    <br />
+
+    <form>
+      <br />
+      <br />
+      <fieldset class="fieldset">
+        <legend class="s">Nos Service</legend>
+
+        <center>
+          <select name="service">
+            <option value="1">Retrait</option>
+            <option value="2">Creation de compte</option>
+            <option value="3">Demande de credit</option>
+          </select>
+        </center>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Nos Coordonner</legend>
+        <table>
+          <tr>
+            <td>
+              <p class="nom" id="nom">ffff</p>
+              <script type="module" src="index.ts"></script>
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="adress"> Notre adresse </label>
+            </td>
+          </tr>
+          <td>
+            <label class="code postal"> Notre Code Postal </label>
+          </td>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Actuelement</legend>
+        <label type="text" name="jours">{Lun-Ven}</label>
+        <br />
+        <label type="text" name="typesecence">Séance Unique:08:00-14:00 </label>
+
+        <br />
+        <label type="text" name="status"> Open </label>
+      </fieldset>
+      <br />
+      <button type="button" id="myBtn" class="button-19">
+        Consulter Ticket
+      </button>
+    </form>
+  </div>
+</div>
+  <script>
+    function openNav() {
+      document.getElementById('mySidenav').style.width = '250px';
+    }
+
+    function closeNav() {
+      document.getElementById('mySidenav').style.width = '0';
+    }
+    function dd() {
+    document.getElementById('nom').innerHTML = 'dd';
+  }
+  </script>
+</html>
